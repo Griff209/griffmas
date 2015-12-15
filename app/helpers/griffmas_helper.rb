@@ -1,0 +1,2 @@
+module GriffmasHelper
+end
