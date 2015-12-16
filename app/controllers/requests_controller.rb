@@ -4,14 +4,13 @@ def create
   @request = Request.new(request_params)
   if @request.save 
     params[:request] = []
-    flash[:message] = "Success!"
-    flash.keep
     redirect_to root_url
+    flash.now[:success] = "Success!"
   else
     params[:request] = []
-    flash[:message] = "It didn't work!"
-    flash.keep
     redirect_to root_url 
+    flash.now[:error] = "It didn't work!"
+    
   end
 end
 
