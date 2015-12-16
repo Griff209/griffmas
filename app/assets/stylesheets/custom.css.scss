@@ -10,28 +10,24 @@ section {
 textarea {
   resize: vertical;
 }
-
-.center {
-  text-align: center;
-}
-
 /*Typography*/
 
 h1 {
   font-size: 4em;
   letter-spacing: 4px;
   color: #f80000;
+  text-align: center;
 }
 
 h2 {
   font-size: 2em;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 p {
   font-size: 1em;
   letter-spacing: 0px;
+  text-align: center;
 }
-
-
 

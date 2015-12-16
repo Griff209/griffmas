@@ -1,6 +1,7 @@
-<%= flash.each do |message_type, message| %>
+<% flash.each do |message_type, message| %>
       <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
+<%= yield %>
 <div class = "center">
 <h1>Merry GriffMas</h1>
 <h2>Griff is giving the gift of software to you</h2>
