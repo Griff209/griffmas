@@ -14,6 +14,6 @@ end
 private
 
   def request_params
-    params.require(:name, :email, :request).permit(:platform)
+    params.require(:request).permit(:name, :email, :platform, :request)
   end
 end
