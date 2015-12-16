@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'requests#new'
+  root 'requests#create'
   resources :requests, only: [:create]
 end
 
