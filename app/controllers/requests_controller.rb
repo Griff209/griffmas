@@ -4,12 +4,12 @@ def create
   @request = Request.new(request_params)
   if @request.save 
     flash[:success] = "Success!"
-    redirect_to root_url 
-    render 'griffmas/home'
+    params[:request] = []
+    redirect_to root_url
   else
     flash[:error] = "It didn't work!"
+    params[:request] = []
     redirect_to root_url 
-    render 'griffmas/home'
   end
 end
 
