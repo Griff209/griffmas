@@ -8,8 +8,7 @@
   SEND YOUR REQUEST TO GRIFF TODAY!
 </p>
 
-<form class = "form-horizontal">
-  <div class ="form-group">
+
 <%= form_for(@request) do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name, class: 'form-control'%>
@@ -20,8 +19,6 @@
 <%= f.text_area :request, placeholder: "Dear Saint Nick...", class: 'form-control' %>
 <%= f.submit "Request Griffmas Gift", class: 'btn btn-primary' %>
 <% end %>
-</div>
-</form>
 
 
 
