@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'requests#create'
+  root 'griffmas#home'
   resources :requests, only: [:create]
 end
 
