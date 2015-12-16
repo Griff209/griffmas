@@ -3,9 +3,9 @@ class RequestsController < ApplicationController
 def create 
   @request = Request.new(request_params)
   if @request.save 
-    render 'griffmas/success'
+    redirect_to "/griffmas/success"
   else
-    render 'griffmas/error'
+    redirect_to "/griffmas/error"
   end
 end
 
