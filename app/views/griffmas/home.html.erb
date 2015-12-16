@@ -10,7 +10,7 @@
 </p>
 </div>
 
-<form class = "form-inline">
+<form class = "form-horizontal">
   <div class ="form-group">
 <%= form_for(@request) do |f| %>
 <%= f.label :name %>
@@ -20,11 +20,10 @@
 <%= f.label :platform, "Preferred Platform" %>
 <%= f.text_field :platform, placeholder: "iOS, Windows, etc", class: 'form-control' %>
 <%= f.text_area :request, placeholder: "Dear Saint Nick...", class: 'form-control' %>
-</form>
-<div class = "center">
 <%= f.submit "Request Griffmas Gift", class: 'btn btn-primary' %>
 <% end %>
 </div>
+</form>
 </div>
 
 
