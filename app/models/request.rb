@@ -6,4 +6,11 @@ class Request < ActiveRecord::Base
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   validates :request, presence: true
+
+private 
+
+  def downcase_email
+    self.email = email.downcase
+  end
+
 end

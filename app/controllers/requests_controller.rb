@@ -1,7 +1,7 @@
 class RequestsController < ApplicationController
 
 def create 
-  @request = Request.new(request_params)
+  @request = Request.new
   if @request.save 
     flash[:success] = "Success!"
     render 'griffmas/home'
@@ -10,10 +10,4 @@ def create
     render 'griffmas/home'
   end
 end
-
-private
-
-  def request_params
-    params.require(:name, :email, :request).permit(:platform)
-  end
 end
