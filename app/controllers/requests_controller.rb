@@ -5,7 +5,7 @@ def create
   if @request.save 
     render 'griffmas/success'
   else
-    render 'griffmas/fail'
+    render 'griffmas/error'
   end
 end
 

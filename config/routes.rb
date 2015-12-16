@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'griffmas#home'
+  get 'griffmas/success'
+  get 'griffmas/error'
   resources :requests, only: [:create]
 end
 
