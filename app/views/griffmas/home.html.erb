@@ -1,8 +1,4 @@
-<% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>"><%= message %></div>
-<% end %>
-<%= yield %>
-<div class = "center">
+<%= flash[:message] %>
 <h1>Merry GriffMas</h1>
 <h2>Griff is giving the gift of software to you</h2>
 <p>
@@ -12,7 +8,6 @@
   NO REQUEST TOO BIG OR SMALL.<br>
   SEND YOUR REQUEST TO GRIFF TODAY!
 </p>
-</div>
 
 <form class = "form-horizontal">
   <div class ="form-group">
@@ -28,7 +23,6 @@
 <% end %>
 </div>
 </form>
-</div>
 
 
 
