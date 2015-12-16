@@ -3,3 +3,4 @@ class GriffmasController < ApplicationController
     @request = Request.new
   end
 end
+ 

@@ -1,7 +1,6 @@
-<div class ="wrapper">
-  <div class = "content-main">
+<div class = "center">
 <h1>Merry GriffMas</h1>
-<h2>Griff is giving the gift of <em>software</em> to you</h2>
+<h2>Griff is giving the gift of software to you</h2>
 <p>
   WANT TO AUTOMATE SOMETHING IN YOUR LIFE?<br>
   GOT A GAME OR APP IDEA?<br>
@@ -9,20 +8,22 @@
   NO REQUEST TOO BIG OR SMALL.<br>
   SEND YOUR REQUEST TO GRIFF TODAY!
 </p>
-  </div>
-  <div class = "content-secondary">
+</div>
+
+<form class = "form-inline">
+  <div class ="form-group">
 <%= form_for(@request) do |f| %>
 <%= f.label :name %>
-<%= f.text_field :name%>
+<%= f.text_field :name, class: 'form-control'%>
 <%= f.label :email %>
-<%= f.email_field :email %>
+<%= f.email_field :email, class: 'form-control' %>
 <%= f.label :platform, "Preferred Platform" %>
-<%= f.text_field :platform, placeholder: "iOS, Windows, etc" %>
-<%= f.text_area :request, placeholder: "Dear Saint Nick..." %>
-<%= f.submit "Request Griffmas Gift" %>
+<%= f.text_field :platform, placeholder: "iOS, Windows, etc", class: 'form-control' %>
+<%= f.text_area :request, placeholder: "Dear Saint Nick...", class: 'form-control' %>
+<%= f.submit "Request Griffmas Gift", class: 'btn btn-primary' %>
 <% end %>
-  </div>
 </div>
+</form>
 
 
 
