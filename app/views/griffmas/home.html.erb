@@ -1,5 +1,7 @@
-<h1>Merry Griffmas</h1>
-<h2>Griff is giving the gift of software to you</h2>
+<div class ="wrapper">
+  <div class = "content-main">
+<h1>Merry GriffMas</h1>
+<h2>Griff is giving the gift of <em>software</em> to you</h2>
 <p>
   WANT TO AUTOMATE SOMETHING IN YOUR LIFE?<br>
   GOT A GAME OR APP IDEA?<br>
@@ -7,7 +9,8 @@
   NO REQUEST TOO BIG OR SMALL.<br>
   SEND YOUR REQUEST TO GRIFF TODAY!
 </p>
-
+  </div>
+  <div class = "content-secondary">
 <%= form_for(@request) do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name%>
@@ -18,7 +21,8 @@
 <%= f.text_area :request, placeholder: "Dear Saint Nick..." %>
 <%= f.submit "Request Griffmas Gift" %>
 <% end %>
-
+  </div>
+</div>
 
 
 
