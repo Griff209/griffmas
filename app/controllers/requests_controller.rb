@@ -3,14 +3,9 @@ class RequestsController < ApplicationController
 def create 
   @request = Request.new(request_params)
   if @request.save 
-    params[:request] = []
-    redirect_to root_url
-    flash.now[:success] = "Success!"
+    render 'griffmas/success'
   else
-    params[:request] = []
-    redirect_to root_url 
-    flash.now[:error] = "It didn't work!"
-    
+    render 'griffmas/fail'
   end
 end
 
